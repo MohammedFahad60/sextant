@@ -1,18 +1,20 @@
-import React from 'react';
-import './App.css';
-import Banner from './Banner';
-import Exhibit from './Exhibit';
-import PublicIP from './PublicIP';
+import React from "react";
+import Banner from "./Banner";
+import Exhibit from "./Exhibit";
+import PublicIP from "./PublicIP";
+import Latency from "./Latency";
 
 function App() {
   return (
     <div className="App">
-      <Banner title="Sextant Dashboard" />
-
-      <Exhibit heading="User Public IPs">
-        <PublicIP version="v4" />
-        <PublicIP version="v6" />
+      <Banner />
+      
+      <Exhibit heading="Public IP Addresses">
+        <PublicIP type="ipv4" />
+        <PublicIP type="ipv6" />
       </Exhibit>
+
+      <Latency />
     </div>
   );
 }
