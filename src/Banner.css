@@ -1,0 +1,8 @@
+.banner {
+  background-color: #007ACC;  /* deep blue */
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

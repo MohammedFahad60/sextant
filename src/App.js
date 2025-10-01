@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Banner from './Banner';
+import Exhibit from './Exhibit';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> Welcome to React
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner title="Sextant Dashboard" />
+
+      <Exhibit heading="Network Metrics">
+        <p>Latency, Bandwidth, Packet Loss, and other metrics will appear here.</p>
+      </Exhibit>
+
+      <Exhibit heading="Alerts">
+        <p>Any network alerts will appear here.</p>
+      </Exhibit>
     </div>
   );
 }
